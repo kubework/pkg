@@ -12,7 +12,7 @@ import (
 	"github.com/pkg/errors"
 	log "github.com/sirupsen/logrus"
 
-	"github.com/kubeTasker/pkg/rand"
+	"github.com/kubework/pkg/rand"
 )
 
 var ErrWaitPIDTimeout = fmt.Errorf("Timed out waiting for PID to complete")

@@ -8,7 +8,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/kubeTasker/pkg/rand"
+	"github.com/kubework/pkg/rand"
 )
 
 // TestIsDirectory tests if a path is a directory. Errors if directory doesn't exist

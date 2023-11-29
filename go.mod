@@ -1,4 +1,4 @@
-module github.com/kubeTasker/pkg
+module github.com/kubework/pkg
 
 go 1.20
 

@@ -25,7 +25,7 @@ build: linux-build windows-build darwin-build
 .PHONY: lint
 lint: vendor build
 	# golangci-lint does not do a good job of formatting imports
-	goimports -local github.com/kubeTasker/pkg -w `find . ! -path './vendor/*' -type f -name '*.go'`
+	goimports -local github.com/kubework/pkg -w `find . ! -path './vendor/*' -type f -name '*.go'`
 	GOGC=$(LINT_GOGC) golangci-lint run --fix --verbose --concurrency $(LINT_CONCURRENCY) --deadline $(LINT_DEADLINE)
 
 .PHONY: test
